@@ -1,0 +1,26 @@
+{
+  "models": [
+    {
+      "id": "oracle-cloud-llm",
+      "name": "Oracle Cloud LLM",
+      "description": "Private Oracle Cloud hosted LLM",
+      "contextLength": 8192,
+      "api": {
+        "type": "openai",
+        "baseURL": "https://your-oracle-cloud-endpoint.com/v1",
+        "apiKey": "your-api-key-here",
+        "headers": {
+          "Content-Type": "application/json",
+          "Authorization": "Bearer your-api-key-here"
+        }
+      },
+      "parameters": {
+        "temperature": 0.7,
+        "maxTokens": 4096,
+        "topP": 0.9,
+        "frequencyPenalty": 0.0,
+        "presencePenalty": 0.0
+      }
+    }
+  ]
+}
