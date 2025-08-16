@@ -1,0 +1,54 @@
+{
+  "cursor.customModels": [
+    {
+      "id": "oracle-llm-fast",
+      "name": "Oracle LLM (Fast)",
+      "description": "Fast response Oracle Cloud LLM",
+      "contextLength": 4096,
+      "api": {
+        "type": "openai",
+        "baseURL": "https://your-oracle-endpoint-1.com/v1",
+        "apiKey": "your-api-key-1-here"
+      },
+      "parameters": {
+        "temperature": 0.3,
+        "maxTokens": 2048,
+        "topP": 0.8
+      }
+    },
+    {
+      "id": "oracle-llm-accurate",
+      "name": "Oracle LLM (Accurate)",
+      "description": "High accuracy Oracle Cloud LLM",
+      "contextLength": 8192,
+      "api": {
+        "type": "openai",
+        "baseURL": "https://your-oracle-endpoint-2.com/v1",
+        "apiKey": "your-api-key-2-here"
+      },
+      "parameters": {
+        "temperature": 0.1,
+        "maxTokens": 4096,
+        "topP": 0.9
+      }
+    },
+    {
+      "id": "oracle-llm-creative",
+      "name": "Oracle LLM (Creative)",
+      "description": "Creative mode Oracle Cloud LLM",
+      "contextLength": 6144,
+      "api": {
+        "type": "openai",
+        "baseURL": "https://your-oracle-endpoint-3.com/v1",
+        "apiKey": "your-api-key-3-here"
+      },
+      "parameters": {
+        "temperature": 0.9,
+        "maxTokens": 3072,
+        "topP": 0.95
+      }
+    }
+  ],
+  "cursor.defaultModel": "oracle-llm-accurate",
+  "cursor.enableCustomModels": true
+}

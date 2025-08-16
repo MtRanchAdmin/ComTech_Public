@@ -1,0 +1,21 @@
+# Cursor AI-IDE Configuration for Oracle Cloud LLM
+# Place this file in your project root directory
+
+# Custom Model Configuration
+CUSTOM_MODEL_CONFIG={
+  "oracle-cloud-llm": {
+    "name": "Oracle Cloud LLM",
+    "endpoint": "https://your-oracle-endpoint.com/api/v1",
+    "apiKey": "your-api-key-here",
+    "modelName": "your-model-name",
+    "contextLength": 8192,
+    "temperature": 0.7,
+    "maxTokens": 4096
+  }
+}
+
+# Default Model Selection
+DEFAULT_MODEL="oracle-cloud-llm"
+
+# API Compatibility Mode
+API_COMPATIBILITY="openai"

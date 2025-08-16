@@ -1,0 +1,53 @@
+{
+  "cursor.customModels": [
+    {
+      "id": "oracle-code-assistant",
+      "name": "Oracle Code Assistant",
+      "description": "Optimized for code generation and debugging",
+      "contextLength": 8192,
+      "api": {
+        "type": "openai",
+        "baseURL": "https://your-oracle-endpoint.com/v1",
+        "apiKey": "your-api-key"
+      },
+      "parameters": {
+        "temperature": 0.1,
+        "maxTokens": 4096,
+        "topP": 0.9
+      }
+    },
+    {
+      "id": "oracle-documentation",
+      "name": "Oracle Documentation Writer",
+      "description": "Specialized for writing documentation and comments",
+      "contextLength": 6144,
+      "api": {
+        "type": "openai",
+        "baseURL": "https://your-oracle-endpoint.com/v1",
+        "apiKey": "your-api-key"
+      },
+      "parameters": {
+        "temperature": 0.3,
+        "maxTokens": 3072,
+        "topP": 0.8
+      }
+    },
+    {
+      "id": "oracle-debugger",
+      "name": "Oracle Debug Assistant",
+      "description": "Focused on error analysis and debugging",
+      "contextLength": 4096,
+      "api": {
+        "type": "openai",
+        "baseURL": "https://your-oracle-endpoint.com/v1",
+        "apiKey": "your-api-key"
+      },
+      "parameters": {
+        "temperature": 0.0,
+        "maxTokens": 2048,
+        "topP": 0.7
+      }
+    }
+  ],
+  "cursor.defaultModel": "oracle-code-assistant"
+}
