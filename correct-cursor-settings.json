@@ -1,0 +1,49 @@
+{
+    "window.commandCenter": true,
+    "workbench.colorTheme": "GitHub Dark",
+    "git.autofetch": true,
+    "workbench.editor.enablePreview": false,
+    "geminicodeassist.agentYoloMode": true,
+    "geminicodeassist.chat.automaticScrolling": true,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "cursor.composer.usageSummaryDisplay": "always",
+    
+    // Oracle Cloud LLM Integration
+    "cursor.customModels": [
+        {
+            "id": "oracle-llm-fast",
+            "name": "Oracle LLM (Fast)",
+            "description": "Fast response Oracle Cloud LLM",
+            "contextLength": 4096,
+            "api": {
+                "type": "openai",
+                "baseURL": "https://your-oracle-endpoint.com/v1",
+                "apiKey": "your-api-key-here"
+            },
+            "parameters": {
+                "temperature": 0.3,
+                "maxTokens": 2048,
+                "topP": 0.8
+            }
+        },
+        {
+            "id": "oracle-llm-accurate",
+            "name": "Oracle LLM (Accurate)",
+            "description": "High accuracy Oracle Cloud LLM",
+            "contextLength": 8192,
+            "api": {
+                "type": "openai",
+                "baseURL": "https://your-oracle-endpoint.com/v1",
+                "apiKey": "your-api-key-here"
+            },
+            "parameters": {
+                "temperature": 0.1,
+                "maxTokens": 4096,
+                "topP": 0.9
+            }
+        }
+    ],
+    "cursor.defaultModel": "oracle-llm-accurate",
+    "cursor.enableCustomModels": true
+}
